@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Facial -Google Gemini</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Análise Facial</h1>
+        <div class="file-input-wrapper">
+            <button class="btn">Escolher Imagem</button>
+            <input type="file" id="inputImagem" accept="image/*">
+        </div>
+        <div id="imagem-preview" class="imagem-preview">
+            <img id="imagemSelecionada" alt="Imagem selecionada" style="max-width: 100%; height: auto; display: none;">
+        </div>
+        <div id="loading" class="loading">Analisando imagem...</div>
+        <div id="error" class="error"></div>
+        <div id="resultado">
+            <h2>Resultados da Análise:</h2>
+            <p><strong>Gênero:</strong> <span id="genero"></span></p>
+            <p><strong>Etnia:</strong> <span id="etnia"></span></p>
+            <p><strong>Formato do Rosto:</strong> <span id="formatoRosto"></span></p>
+            <p><strong>Melhor Armação:</strong> <span id="melhorArmacao"></span></p>
+        </div>
+    </div>
+
+<script src="./app.js"></script>
+</body>
+</html>
